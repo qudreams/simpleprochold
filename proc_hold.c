@@ -294,7 +294,7 @@ static int __init prochold_init(void)
 
 static void __exit prochold_exit(void)
 {
-    printk("-----Exit kaction-----\n");
+    printk("-----exit proc_hold-----\n");
     unhold_one_proc(client_pid);
     finish_proc_hold();
 }
